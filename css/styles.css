@@ -10,9 +10,7 @@
 
 
 /* ---- Base Rules ---- */
-html{
-    scroll-behavior: smooth;
-}
+
 
 body {
     background: rgb(136,203,171);
@@ -86,11 +84,13 @@ section {
     color: #000;
 }
 
-.navbar__menu .menu__link:hover {
+.navbar__menu .menu__link:hover ,
+.navbar__menu .menu__link.activation {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
 }
+
 @media (max-width : 430px){
     .navbar__menu .menu__link {
         display: block;
